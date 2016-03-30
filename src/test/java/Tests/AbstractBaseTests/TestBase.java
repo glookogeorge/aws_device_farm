@@ -15,7 +15,6 @@
 
 package Tests.AbstractBaseTests;
 
-import Pages.NavigationPage;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -46,10 +45,6 @@ public abstract class TestBase {
      */
     public abstract String getName();
 
-    /**
-     * A page containing the navigation drawer
-     */
-    private NavigationPage navigationPage;
 
     /**
      * Method to initialize the test's page
@@ -99,8 +94,7 @@ public abstract class TestBase {
      */
     @BeforeClass
     public void navigateTo() throws InterruptedException {
-        navigationPage = new NavigationPage(driver);
-        navigationPage.gotoCategory(getName());
+
     }
 
     /**
