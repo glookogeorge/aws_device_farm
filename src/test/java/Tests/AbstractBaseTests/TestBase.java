@@ -15,6 +15,7 @@
 
 package Tests.AbstractBaseTests;
 
+import Util.Helpers;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -76,6 +77,7 @@ public abstract class TestBase {
 
         //Use a higher value if your mobile elements take time to show up
         driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
+        Helpers.init(driver);
     }
 
     /**

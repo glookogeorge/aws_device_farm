@@ -17,15 +17,13 @@ import java.util.concurrent.TimeUnit;
 public abstract class Helpers {
 
     public static AndroidDriver driver;
-    public static URL serverAddress;
     private static WebDriverWait driverWait;
 
     /**
      * Initialize the webdriver. Must be called before using any helper methods. *
      */
-    public static void init(AndroidDriver webDriver, URL driverServerAddress) {
+    public static void init(AndroidDriver webDriver) {
         driver = webDriver;
-        serverAddress = driverServerAddress;
         int timeoutInSeconds = 60;
         // must wait at least 60 seconds for running on Sauce.
         // waiting for 30 seconds works locally however it fails on Sauce.
