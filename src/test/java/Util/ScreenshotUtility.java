@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import Tests.AbstractBaseTests.TestBase;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -54,7 +56,7 @@ public class ScreenshotUtility implements ITestListener {
         String destDir = "";
         String passfailMethod = result.getMethod().getRealClass().getSimpleName() + "." + result.getMethod().getMethodName();
         // To capture screenshot.
-        File scrFile = ((TakesScreenshot) ScreenshotOnPassFail.driver).getScreenshotAs(OutputType.FILE);
+        File scrFile = ((TakesScreenshot) TestBase.driver).getScreenshotAs(OutputType.FILE);
         DateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy__hh_mm_ssaa");
         // If status = fail then set folder name "screenshots/Failures"
         if (status.equalsIgnoreCase("fail")) {

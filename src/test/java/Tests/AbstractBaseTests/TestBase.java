@@ -16,6 +16,7 @@
 package Tests.AbstractBaseTests;
 
 import Util.Helpers;
+import Util.ScreenshotUtility;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -24,6 +25,7 @@ import org.testng.annotations.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+@Listeners({ ScreenshotUtility.class })
 
 /**
  * An abstract base for all of the Android tests within this package

@@ -26,7 +26,7 @@ public class SignUpTests extends TestBase {
     public void setUpPage() {}
 
     @Test
-    public boolean signup1() throws Exception {
+    public void signup1() throws Exception {
         boolean passed = true;
         try {
             wait(for_radiobutton("QA"));
@@ -42,11 +42,12 @@ public class SignUpTests extends TestBase {
             element(for_id("com.glooko.logbook:id/username_field")).sendKeys(email);
             element(for_id("com.glooko.logbook:id/sign_up_button")).click();
             wait(for_text_exact("Are you compatible with Glooko?"));
+            //assert true;
         } catch (Exception e) {
             passed = false;
         }
         assert passed == true;
-        return passed;
+        //return passed;
     }
 
     /** wait wraps Helpers.wait **/
