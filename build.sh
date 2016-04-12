@@ -1,4 +1,4 @@
-#curl   -H "X-HockeyAppToken: c42fd975a0c24b00ae1d43673f26d225"   https://rink.hockeyapp.net/api/2/apps/4c6931e7bcf5ad25dba351ee77c0db08/app_versions?include_build_urls=true > link.json
+curl   -H "X-HockeyAppToken: c42fd975a0c24b00ae1d43673f26d225"   https://rink.hockeyapp.net/api/2/apps/4c6931e7bcf5ad25dba351ee77c0db08/app_versions?include_build_urls=true > link.json
 
 build=$(cat link.json | jq '.app_versions[0] .build_url')
 build=${build#'"'}
@@ -6,7 +6,7 @@ build=${build%'"'}
 
 echo Downloading app
 
-#curl -o logbook-debug.apk -O -L $build
+curl -o logbook-debug.apk -O -L $build
 
 
 
