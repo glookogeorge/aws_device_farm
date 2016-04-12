@@ -1,0 +1,10 @@
+{
+    "upload": {
+        "status": "INITIALIZED", 
+        "name": "zip-with-dependencies.zip", 
+        "created": 1460423916.114, 
+        "url": "https://prod-us-west-2-uploads.s3-us-west-2.amazonaws.com/arn%3Aaws%3Adevicefarm%3Aus-west-2%3A110312683877%3Aproject%3Ac288772b-c1e9-4aad-bc4d-1837a21c2cfb/uploads/arn%3Aaws%3Adevicefarm%3Aus-west-2%3A110312683877%3Aupload%3Ac288772b-c1e9-4aad-bc4d-1837a21c2cfb/363fbc07-a044-46d9-afd9-7f197cacfa09/zip-with-dependencies.zip?AWSAccessKeyId=AKIAI3BDGZ5S7TQL2OZA&Expires=1460510316&Signature=KqKlRlUECjhhS99DGrnMNA89HAQ%3D", 
+        "type": "APPIUM_JAVA_TESTNG_TEST_PACKAGE", 
+        "arn": "arn:aws:devicefarm:us-west-2:110312683877:upload:c288772b-c1e9-4aad-bc4d-1837a21c2cfb/363fbc07-a044-46d9-afd9-7f197cacfa09"
+    }
+}

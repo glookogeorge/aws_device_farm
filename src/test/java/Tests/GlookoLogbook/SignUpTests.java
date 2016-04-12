@@ -29,8 +29,8 @@ public class SignUpTests extends TestBase {
     public void signup1() throws Exception {
         boolean passed = true;
         try {
-            wait(for_radiobutton("QA"));
-            element(for_radiobutton("QA")).click();
+            wait(for_radiobutton("SS-v2"));
+            element(for_radiobutton("SS-v2")).click();
             wait(for_button("OK"));
             element(for_button("OK")).click();
             wait(for_id("com.glooko.logbook:id/sign_up"));
